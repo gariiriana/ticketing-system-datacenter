@@ -1,43 +1,64 @@
 package main
 
 import (
+	"context"
 	"log"
-	"net/http"
-	"os"
 
-	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/handlers"
+	firebase "firebase.google.com/go/v4"
+	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/config"
+	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/controllers"
+	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/middleware"
+	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/repository"
+	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/service"
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
+	"google.golang.org/api/option"
 )
 
 func main() {
-	// Load .env file
-	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found, using default environment variables")
+	// Load Configuration
+	cfg := config.LoadConfig()
+
+	// Initialize Firebase
+	opt := option.WithCredentialsFile(cfg.FirebaseCredentialPath)
+	app, err := firebase.NewApp(context.Background(), nil, opt)
+	if err != nil {
+		log.Fatalf("error initializing app: %v\n", err)
 	}
 
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080"
+	authClient, err := app.Auth(context.Background())
+	if err != nil {
+		log.Fatalf("error getting auth client: %v\n", err)
 	}
+
+	// Initialize Database
+	repository.InitDB(cfg.DBURL)
+
+	// Initialize Repository, Service, and Controller
+	ticketRepo := repository.NewTicketRepository(repository.DB)
+	ticketSvc := service.NewTicketService(ticketRepo)
+	ticketCtrl := controllers.NewTicketController(ticketSvc)
+
+	// Set Gin Mode
+	gin.SetMode(cfg.GinMode)
 
 	r := gin.Default()
-
-	// Health check
-	r.GET("/health", handlers.HealthCheck)
 
 	// API Routes
 	api := r.Group("/api/v1")
 	{
-		// Site Routes
-		api.GET("/sites", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{"message": "List Sites"})
-		})
+		// Protected Routes
+		protected := api.Group("/")
+		protected.Use(middleware.AuthMiddleware(authClient))
+		{
+			api.GET("/tickets", ticketCtrl.GetTickets)
+			api.POST("/tickets", ticketCtrl.CreateTicket)
+			api.PATCH("/tickets/:id", ticketCtrl.UpdateStatus)
+		}
+	}
 
-		// Ticket Routes
-		api.GET("/tickets", handlers.GetTickets)
-		api.POST("/tickets", handlers.CreateTicket)
-		api.PATCH("/tickets/:id", handlers.UpdateTicketStatus)
+	port := cfg.Port
+	if port == "" {
+		port = "8080"
 	}
 
 	log.Printf("Server starting on port %s", port)
