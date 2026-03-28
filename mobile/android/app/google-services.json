@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558181190349",
+    "project_id": "ticketingutt-1cde2",
+    "storage_bucket": "ticketingutt-1cde2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558181190349:android:e318079e4e95028a873784",
+        "android_client_info": {
+          "package_name": "com.gariiriana.ticketing_system_datacenter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo3tLp3RiUHmrvT-1W5ZLb9NVlrI9wW-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
