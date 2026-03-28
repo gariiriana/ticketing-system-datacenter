@@ -7,7 +7,7 @@ class ApiService {
   /// For Android physical device: use your PC's local IP (e.g. 192.168.1.x)
   /// For Android emulator: use 10.0.2.2
   /// For web/desktop: use localhost
-  static const String _baseUrl = 'http://10.0.2.2:8080/api/v1';
+  static const String _baseUrl = 'http://10.10.20.153:8080/api/v1';
 
   Future<String?> _getToken() async {
     return await FirebaseAuth.instance.currentUser?.getIdToken();
