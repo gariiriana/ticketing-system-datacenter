@@ -2,7 +2,9 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"log"
+	"os"
 
 	firebase "firebase.google.com/go/v4"
 	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/config"
@@ -11,49 +13,110 @@ import (
 	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/repository"
 	"github.com/gariiriana/ticketing-system-datacenter/backend/internal/service"
 	"github.com/gin-gonic/gin"
+	"golang.org/x/oauth2/google"
+	"golang.org/x/oauth2/jwt"
 	"google.golang.org/api/option"
 )
 
-func main() {
-	// Load Configuration
-	cfg := config.LoadConfig()
+type serviceAccountKey struct {
+	Type        string `json:"type"`
+	ProjectID   string `json:"project_id"`
+	PrivateKeyID string `json:"private_key_id"`
+	PrivateKey   string `json:"private_key"`
+	ClientEmail  string `json:"client_email"`
+	TokenURI     string `json:"token_uri"`
+}
 
-	// Initialize Firebase
-	opt := option.WithCredentialsFile(cfg.FirebaseCredentialPath)
-	app, err := firebase.NewApp(context.Background(), nil, opt)
+func main() {
+	// Logging to stdout
+	log.SetFlags(log.LstdFlags | log.Lshortfile)
+	log.Println("=== TICKETING SYSTEM DATACENTER - BACKEND ===")
+
+	// Load Config
+	cfg := config.LoadConfig()
+	log.Printf("Port: %s | Mode: %s", cfg.Port, cfg.GinMode)
+
+	// Load service account key
+	keyBytes, err := os.ReadFile(cfg.FirebaseCredentialPath)
 	if err != nil {
-		log.Fatalf("error initializing app: %v\n", err)
+		log.Fatalf("Cannot read Firebase credentials: %v", err)
+	}
+
+	var sa serviceAccountKey
+	if err := json.Unmarshal(keyBytes, &sa); err != nil {
+		log.Fatalf("Cannot parse Firebase credentials: %v", err)
+	}
+
+	// Use JWT config to create a custom token source
+	// This bypasses x509 PKCS8 parsing issues in some Firebase SDK versions
+	jwtConfig := &jwt.Config{
+		Email:        sa.ClientEmail,
+		PrivateKey:   []byte(sa.PrivateKey),
+		PrivateKeyID: sa.PrivateKeyID,
+		Scopes: []string{
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/firebase",
+		},
+		TokenURL: google.JWTTokenURL,
+	}
+	tokenSource := jwtConfig.TokenSource(context.Background())
+
+	// Initialize Firebase with custom token source
+	opt := option.WithTokenSource(tokenSource)
+	app, err := firebase.NewApp(context.Background(), &firebase.Config{
+		ProjectID: sa.ProjectID,
+	}, opt)
+	if err != nil {
+		log.Fatalf("Firebase app init failed: %v", err)
 	}
 
 	authClient, err := app.Auth(context.Background())
 	if err != nil {
-		log.Fatalf("error getting auth client: %v\n", err)
+		log.Fatalf("Firebase auth client failed: %v", err)
 	}
+	log.Println("✅ Firebase initialized")
 
 	// Initialize Database
 	repository.InitDB(cfg.DBURL)
+	log.Println("✅ Database connected")
 
-	// Initialize Repository, Service, and Controller
+	// Initialize layers
 	ticketRepo := repository.NewTicketRepository(repository.DB)
 	ticketSvc := service.NewTicketService(ticketRepo)
 	ticketCtrl := controllers.NewTicketController(ticketSvc)
 
 	// Set Gin Mode
 	gin.SetMode(cfg.GinMode)
-
 	r := gin.Default()
 
-	// API Routes
-	api := r.Group("/api/v1")
-	{
-		// Protected Routes
-		protected := api.Group("/")
-		protected.Use(middleware.AuthMiddleware(authClient))
-		{
-			api.GET("/tickets", ticketCtrl.GetTickets)
-			api.POST("/tickets", ticketCtrl.CreateTicket)
-			api.PATCH("/tickets/:id", ticketCtrl.UpdateStatus)
+	// CORS middleware
+	r.Use(func(c *gin.Context) {
+		c.Header("Access-Control-Allow-Origin", "*")
+		c.Header("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS")
+		c.Header("Access-Control-Allow-Headers", "Content-Type, Authorization")
+		if c.Request.Method == "OPTIONS" {
+			c.AbortWithStatus(204)
+			return
 		}
+		c.Next()
+	})
+
+	// Health check (no auth)
+	r.GET("/health", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"status":  "ok",
+			"service": "ticketing-datacenter",
+			"version": "1.0.0",
+		})
+	})
+
+	// Protected API Routes
+	api := r.Group("/api/v1")
+	api.Use(middleware.AuthMiddleware(authClient))
+	{
+		api.GET("/tickets", ticketCtrl.GetTickets)
+		api.POST("/tickets", ticketCtrl.CreateTicket)
+		api.PATCH("/tickets/:id", ticketCtrl.UpdateStatus)
 	}
 
 	port := cfg.Port
@@ -61,8 +124,8 @@ func main() {
 		port = "8080"
 	}
 
-	log.Printf("Server starting on port %s", port)
+	log.Printf("🚀 Server running on :%s", port)
 	if err := r.Run(":" + port); err != nil {
-		log.Fatalf("Failed to start server: %v", err)
+		log.Fatalf("Server failed: %v", err)
 	}
 }

@@ -151,7 +151,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: DropdownButtonFormField<String>(
-                  value: _selectedSite,
+                  initialValue: _selectedSite,
                   dropdownColor: const Color(0xFF2A2A3E),
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
@@ -273,7 +273,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
                       borderRadius: BorderRadius.circular(14),
                     ),
                     elevation: 8,
-                    shadowColor: const Color(0xFF6C63FF).withOpacity(0.4),
+                    shadowColor: const Color(0xFF6C63FF).withValues(alpha: 0.4),
                   ),
                 ),
               ),

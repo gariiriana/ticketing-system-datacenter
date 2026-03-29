@@ -1,0 +1,5 @@
+.env*
+serviceAccountKey.json
+backend/serviceAccountKey.json
+vendor/
+*.exe

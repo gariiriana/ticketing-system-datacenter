@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../models/ticket.dart';
 import '../services/api_service.dart';
-import 'login_screen.dart';
 import 'create_ticket_screen.dart';
 import 'ticket_detail_screen.dart';
 
@@ -157,8 +156,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                       horizontal: 8, vertical: 2),
                                   decoration: BoxDecoration(
                                     color: isAdmin
-                                        ? Colors.purpleAccent.withOpacity(0.3)
-                                        : Colors.blueAccent.withOpacity(0.3),
+                                        ? Colors.purpleAccent.withValues(alpha: 0.3)
+                                        : Colors.blueAccent.withValues(alpha: 0.3),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Text(
@@ -239,7 +238,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.inbox_rounded,
-                            size: 64, color: Colors.white.withOpacity(0.2)),
+                            size: 64, color: Colors.white.withValues(alpha: 0.2)),
                         const SizedBox(height: 16),
                         const Text(
                           'Belum ada tiket',
@@ -295,7 +294,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             color: const Color(0xFF1E1E2E),
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
-                              color: statusColor.withOpacity(0.3),
+                              color: statusColor.withValues(alpha: 0.3),
                               width: 1,
                             ),
                           ),
@@ -309,7 +308,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     Container(
                                       padding: const EdgeInsets.all(8),
                                       decoration: BoxDecoration(
-                                        color: statusColor.withOpacity(0.15),
+                                        color: statusColor.withValues(alpha: 0.15),
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Icon(
@@ -340,11 +339,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 10, vertical: 4),
                                       decoration: BoxDecoration(
-                                        color: statusColor.withOpacity(0.15),
+                                        color: statusColor.withValues(alpha: 0.15),
                                         borderRadius: BorderRadius.circular(8),
                                         border: Border.all(
                                             color:
-                                                statusColor.withOpacity(0.5)),
+                                                statusColor.withValues(alpha: 0.5)),
                                       ),
                                       child: Text(
                                         ticket.status.toUpperCase(),

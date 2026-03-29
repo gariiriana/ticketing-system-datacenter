@@ -125,18 +125,18 @@ class _TicketDetailScreenState extends State<TicketDetailScreen> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    statusColor.withOpacity(0.2),
-                    statusColor.withOpacity(0.05),
+                    statusColor.withValues(alpha: 0.2),
+                    statusColor.withValues(alpha: 0.05),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: statusColor.withOpacity(0.4)),
+                border: Border.all(color: statusColor.withValues(alpha: 0.4)),
               ),
               child: Column(
                 children: [
                   CircleAvatar(
                     radius: 30,
-                    backgroundColor: statusColor.withOpacity(0.2),
+                    backgroundColor: statusColor.withValues(alpha: 0.2),
                     child: Icon(
                       ticket.status == 'approved'
                           ? Icons.check_circle_rounded
@@ -284,7 +284,7 @@ class _TicketDetailScreenState extends State<TicketDetailScreen> {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: const Color(0xFF6C63FF).withOpacity(0.15),
+              color: const Color(0xFF6C63FF).withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: const Color(0xFF6C63FF), size: 20),

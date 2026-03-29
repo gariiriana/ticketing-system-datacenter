@@ -115,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen>
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF6C63FF).withOpacity(0.4),
+                          color: const Color(0xFF6C63FF).withValues(alpha: 0.4),
                           blurRadius: 20,
                           offset: const Offset(0, 8),
                         ),
@@ -154,7 +154,7 @@ class _LoginScreenState extends State<LoginScreen>
                       color: const Color(0xFF1E1E2E),
                       borderRadius: BorderRadius.circular(24),
                       border: Border.all(
-                        color: Colors.white.withOpacity(0.08),
+                        color: Colors.white.withValues(alpha: 0.08),
                       ),
                     ),
                     child: Column(
@@ -246,7 +246,7 @@ class _LoginScreenState extends State<LoginScreen>
                               ),
                               elevation: 8,
                               shadowColor:
-                                  const Color(0xFF6C63FF).withOpacity(0.4),
+                                  const Color(0xFF6C63FF).withValues(alpha: 0.4),
                             ),
                             child: _isLoading
                                 ? const SizedBox(
