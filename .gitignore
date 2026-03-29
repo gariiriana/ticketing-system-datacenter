@@ -1,0 +1,13 @@
+# Root ignores
+hs_err_pid*.log
+*.log
+
+# Mobile ignores (redundant but safe)
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugins*
+
+# Backend ignores (redundant but safe)
+backend/.env*
+backend/serviceAccountKey.json
+backend/vendor/

@@ -6,7 +6,12 @@ import 'screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  try {
+    await Firebase.initializeApp();
+  } catch (e) {
+    // Firebase gagal init, tetap lanjut tapi tampilkan error
+    debugPrint('Firebase init error: $e');
+  }
   runApp(const MyApp());
 }
 
@@ -16,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ticketing System',
+      title: 'TIKET DACEN',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
