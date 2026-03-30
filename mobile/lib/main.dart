@@ -6,12 +6,15 @@ import 'screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
   try {
-    await Firebase.initializeApp();
+    // Beri timeout agar tidak menunggu selamanya jika internet bermasalah
+    await Firebase.initializeApp().timeout(const Duration(seconds: 10));
   } catch (e) {
-    // Firebase gagal init, tetap lanjut tapi tampilkan error
-    debugPrint('Firebase init error: $e');
+    debugPrint('Firebase init error or timeout: $e');
+    // Kita tetap lanjut ke app, biar UI yang handle state login
   }
+  
   runApp(const MyApp());
 }
 

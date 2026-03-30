@@ -1,0 +1,1454 @@
+﻿Initialized native services in: C:\Users\Gari Iriana\.gradle\native
+Initialized jansi services in: C:\Users\Gari Iriana\.gradle\native
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon, 2 busy Daemons could not be reused, use --status for details
+Starting process 'Gradle build daemon'. Working directory: C:\Users\Gari Iriana\.gradle\daemon\8.14 Command: C:\Program Files\Java\jdk-20\bin\java.exe --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -XX:MaxMetaspaceSize=4G -XX:ReservedCodeCacheSize=512m -XX:+HeapDumpOnOutOfMemoryError -Xmx8G -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp C:\Users\Gari Iriana\.gradle\wrapper\dists\gradle-8.14-all\c2qonpi39x1mddn7hk5gh9iqj\gradle-8.14\lib\gradle-daemon-main-8.14.jar -javaagent:C:\Users\Gari Iriana\.gradle\wrapper\dists\gradle-8.14-all\c2qonpi39x1mddn7hk5gh9iqj\gradle-8.14\lib\agents\gradle-instrumentation-agent-8.14.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.14
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 4.22 secs.
+The client will now receive all logging from the daemon (pid: 21924). The daemon log file: C:\Users\Gari Iriana\.gradle\daemon\8.14\daemon-21924.out.log
+Starting build in new daemon [memory: 8 GiB]
+Using 16 worker leases.
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-20': {JAVA_HOME=C:\Program Files\Java\jdk-20, JAVA_VERSION=20, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=20+36-2344, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=20+36-2344, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\Users\Gari Iriana\.gemini\antigravity\scratch\ticketing-system-datacenter\mobile\android] as hierarchies to watch
+File system watching is active
+Starting Build
+Now considering [C:\Users\Gari Iriana\OneDrive\Documents\ticketing dacen\flutter\packages\flutter_tools\gradle, C:\Users\Gari Iriana\.gemini\antigravity\scratch\ticketing-system-datacenter\mobile\android] as hierarchies to watch
+
+> Configure project :gradle
+Evaluating project ':gradle' using build file 'C:\Users\Gari Iriana\OneDrive\Documents\ticketing dacen\flutter\packages\flutter_tools\gradle\build.gradle.kts'.
+Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+Resolved plugin [id: 'org.gradle.groovy']
+Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '5.2.0']
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '1.9.20']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+file or directory 'C:\Users\Gari Iriana\OneDrive\Documents\ticketing dacen\flutter\packages\flutter_tools\gradle\src\main\java', not found
+Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+Resolved plugin [id: 'com.android.application', version: '8.11.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.2.20', apply: false]
+Resolved plugin [id: 'com.google.gms.google-services', version: '4.4.0', apply: false]
+Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#123,Execution worker Thread 8,5,main]) started.
+:gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#115,included builds,5,main]) started.
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle:compileKotlin (Thread[#115,included builds,5,main]) started.
+:gradle:compileKotlin (Thread[#115,included builds,5,main]) started.
+
+> Task :gradle:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle:compileJava (Thread[#115,included builds,5,main]) started.
+:gradle:compileJava (Thread[#115,included builds,5,main]) started.
+
+> Task :gradle:compileJava NO-SOURCE
+Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle:compileGroovy (Thread[#115,included builds,5,main]) started.
+:gradle:compileGroovy (Thread[#115,included builds,5,main]) started.
+
+> Task :gradle:compileGroovy NO-SOURCE
+Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+Resolve mutations for :gradle:pluginDescriptors (Thread[#115,included builds,5,main]) started.
+:gradle:pluginDescriptors (Thread[#115,included builds,5,main]) started.
+
+> Task :gradle:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle:processResources (Thread[#115,included builds,5,main]) started.
+:gradle:processResources (Thread[#115,included builds,5,main]) started.
+
+> Task :gradle:processResources UP-TO-DATE
+Caching disabled for task ':gradle:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:processResources' as it is up-to-date.
+Resolve mutations for :gradle:classes (Thread[#115,included builds,5,main]) started.
+:gradle:classes (Thread[#121,Execution worker Thread 6,5,main]) started.
+
+> Task :gradle:classes UP-TO-DATE
+Skipping task ':gradle:classes' as it has no actions.
+Resolve mutations for :gradle:jar (Thread[#121,Execution worker Thread 6,5,main]) started.
+:gradle:jar (Thread[#121,Execution worker Thread 6,5,main]) started.
+
+> Task :gradle:jar UP-TO-DATE
+Caching disabled for task ':gradle:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle:jar' as it is up-to-date.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\52467ba2aa85d48f060c2a1c904d000f\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.7.1\9e23359b598ec6b74b23e53110dd5c577adf2243\asm-util-9.7.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\77828e3b9ab0a2e6c41aaacf44990db0\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\9.7.1\406c6a2225cfe1819f102a161e54cc16a5c24f75\asm-commons-9.7.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ba7dab41f3763d47d615f4135817e454\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.7.1\f0ed132a49244b042cd0e15702ab9f2ce3cc8436\asm-9.7.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\9.7.1\f97a3b319f0ed6a8cd944dc79060d3912a28985f\asm-analysis-9.7.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.7.1\3a53139787663b139de76b627fca0084ab60d32c\asm-tree-9.7.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\448b77bc82599dc70acf59b64287ae6d\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.crypto.tink\tink\1.7.0\668b57f109d32349b2870448f06ae6f202713edc\tink-1.7.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d26e4d12fc87d908d377ac641f35005f\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1915e62c4bd78f12308c7cc7e102fdac\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8d803f74bc08620adbcf3659e0dd8afb\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\03b12a1713674e47c4a3c04cb44acb39\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.squareup\javapoet\1.10.0\712c178d35185d8261295913c9f2a7d6867a6007\javapoet-1.10.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d3a1e58d1ec253efcd6e817eb23c0040\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java-util\3.25.5\38cc5ce479603e36466feda2a9f1dfdb2210ef00\protobuf-java-util-3.25.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.5.6\164343da11db817e81e24e0d9869527e069850c9\httpmime-4.5.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\40ce7926dfa4287e169508f69c0cf81a\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\05c2ff59c0b7a34a09b0cbf4f09b6e8a\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1db38bf4fe645fab1329c70d12b88222\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\448b77bc82599dc70acf59b64287ae6d\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8d803f74bc08620adbcf3659e0dd8afb\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1915e62c4bd78f12308c7cc7e102fdac\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d3a1e58d1ec253efcd6e817eb23c0040\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a953a9ec747499507e979f28c3d9b610\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\03b12a1713674e47c4a3c04cb44acb39\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\40ce7926dfa4287e169508f69c0cf81a\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d26e4d12fc87d908d377ac641f35005f\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\05c2ff59c0b7a34a09b0cbf4f09b6e8a\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\24499ab9d12730a9faeafb1a60c2ccab\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\79a18a78701ab821785a6d5a90cfa143\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a953a9ec747499507e979f28c3d9b610\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\24499ab9d12730a9faeafb1a60c2ccab\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\79a18a78701ab821785a6d5a90cfa143\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.16.1\377d592e740dc77124e0901291dbfaa6810a200e\commons-io-2.16.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\34d6463aef3309917188f109b16e68a3\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\34d6463aef3309917188f109b16e68a3\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\e1af31b6f6841aeef4f866f19498c6b7\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ffe2053e6b21bc71de0503b2aead1ee2\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcpkix-jdk18on\1.79\7693cec3b8779b74b35466dcaeeaac7409872954\bcpkix-jdk18on-1.79.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\e1af31b6f6841aeef4f866f19498c6b7\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\689aba87ca9ddc0bc7ac2f4a65b84b94\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-protobuf\1.69.1\433b61f31e1dce6adf6c43ea3ca510f8d8d7ea70\grpc-protobuf-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.crypto.tink\tink\1.7.0\668b57f109d32349b2870448f06ae6f202713edc\tink-1.7.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\689aba87ca9ddc0bc7ac2f4a65b84b94\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\6b07c848d762d1d34f6ac98a7bb32e88\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0f6c4831aee8af63180a748e247a1b45\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\6b07c848d762d1d34f6ac98a7bb32e88\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0f6c4831aee8af63180a748e247a1b45\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-klib-commonizer-api\2.2.20\bedd0bf6302d0bccc2b65535a0cb74b520b67858\kotlin-klib-commonizer-api-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-stub\1.69.1\685c974e6717e6c1bcadd1b7461167d27f64c524\grpc-stub-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-util\1.69.1\8c3a9d835a78be9653e9ba92ceab430547924937\grpc-util-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-build-statistics\2.2.20\6cd7e2985af2647576bfc6bd1ba450000acbde4a\kotlin-build-statistics-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.testing.platform\core-proto\0.0.9-alpha03\a0de640d69d847081f087c45dda7e9b3754fe350\core-proto-0.0.9-alpha03.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-idea\2.2.20\a07b350797aa4fe6d4bc6e1be2feecb638e94b13\kotlin-gradle-plugin-idea-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android.tools.analytics-library\protos\31.11.1\6c1fe59ed1ddd9d793d5cf57e43acf74ad40cc14\protos-31.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.25.5\5ae5c9ec39930ae9b5a61b32b93288818ec05ec1\protobuf-java-3.25.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.flatbuffers\flatbuffers-java\1.12.0\8201cc7b511177a37071249e891f2f2fea4b32e9\flatbuffers-java-1.12.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-idea-proto\2.2.20\ccea68faf3074b47b2d1549d971d5438aae0adba\kotlin-gradle-plugin-idea-proto-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-netty\1.69.1\9235ab343b80acd957b4bb8bd740b8272735ddb8\grpc-netty-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.tensorflow\tensorflow-lite-metadata\0.2.0\7dbe8f75ae5c0ef7093c43c3ac8b560bbc7ea4b6\tensorflow-lite-metadata-0.2.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-core\1.69.1\d9f6383e1903af6e9502e7c1c8e4fbe28a236321\grpc-core-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.11.0\527175ca6d81050b53bdd4c457a6d6e017626b0e\gson-2.11.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.api.grpc\proto-google-common-protos\2.48.0\86b550469172d830d174d7434c318d7dff179910\proto-google-common-protos-2.48.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a8a80c76fa6d8253e52556efdf403476\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-inprocess\1.69.1\8999d859ebf25f00e5a968b5e36e1294b109cb9e\grpc-inprocess-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\22c4bef90d53e28ed7d08eeaa093bedd\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\3a2bf445eb47bf8ef06548784915b9ab\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8571fe55981fd1afa7b29011dee34625\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\c5f437324e9d71abed350debdd6c5393\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f8d031860f282eaa042588bc1fcb3e3e\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\83b7a66581fb52d70a2ad433fa2077f9\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\6a7886ccd01ee108b64eff398a42dd49\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\29b2049179ae0f14e3c9c245937cb6bd\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\729f351c74660a037471130188526c7a\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0783ad6bda649ff6a8612f6d26862dff\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d65500d885f9afca9f2fd5335a97775a\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\fd6d2d8898f1e41e22aa394a4e1a8c96\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9206c3ed8efd822082f1b45fde10c568\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1286d8a74782449c4c78c115f8ad4efc\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8cb63e53a5b031eb6fc4fe195a3ac910\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-klib-commonizer-api\2.2.20\bedd0bf6302d0bccc2b65535a0cb74b520b67858\kotlin-klib-commonizer-api-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-stub\1.69.1\685c974e6717e6c1bcadd1b7461167d27f64c524\grpc-stub-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-inprocess\1.69.1\8999d859ebf25f00e5a968b5e36e1294b109cb9e\grpc-inprocess-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-build-statistics\2.2.20\6cd7e2985af2647576bfc6bd1ba450000acbde4a\kotlin-build-statistics-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-idea\2.2.20\a07b350797aa4fe6d4bc6e1be2feecb638e94b13\kotlin-gradle-plugin-idea-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.flatbuffers\flatbuffers-java\1.12.0\8201cc7b511177a37071249e891f2f2fea4b32e9\flatbuffers-java-1.12.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-util\1.69.1\8c3a9d835a78be9653e9ba92ceab430547924937\grpc-util-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\2403837e6853d35504f88c80613a330e\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ea0925ef377e488530de61878df80de4\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4fe8cb2596e73cc329874e1fdf87b22c\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\3ae60b3840f76fbc495a453c70c97bf0\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\59d4469867e677d91f281a1e27259851\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\601b51fa272b735ecc675e1b376e1482\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0bab9ab604962ffad0d5c31fde221fcb\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\2403837e6853d35504f88c80613a330e\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-netty\1.69.1\9235ab343b80acd957b4bb8bd740b8272735ddb8\grpc-netty-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.11.0\527175ca6d81050b53bdd4c457a6d6e017626b0e\gson-2.11.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ea0925ef377e488530de61878df80de4\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4fe8cb2596e73cc329874e1fdf87b22c\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.tensorflow\tensorflow-lite-metadata\0.2.0\7dbe8f75ae5c0ef7093c43c3ac8b560bbc7ea4b6\tensorflow-lite-metadata-0.2.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\59d4469867e677d91f281a1e27259851\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\3ae60b3840f76fbc495a453c70c97bf0\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0bab9ab604962ffad0d5c31fde221fcb\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ba603a8e5cd50a7c88cc1c83cedbafe1\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0c8e03626dc28f5f9dc8448d5c34665e\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-context\1.69.1\acec56668f9e67775cfe43fdb9edd046e9426a2d\grpc-context-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-klib-metadata\2.2.20\8a0c47f26e47702792fe0bbefbee6e8be12b3463\kotlin-util-klib-metadata-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1f33ebe59883eca7cf0b19e5fe8de863\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\abi-tools-api\2.2.20\15daea957a282df212a7bc3189dbbf442b38dec8\abi-tools-api-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-runner\2.2.20\72475464f90c5f5aae5072edc60c2b29a8353f63\kotlin-compiler-runner-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-protobuf-lite\1.69.1\40cc0d2c62b22c7c22056e17c1141cb714993ea9\grpc-protobuf-lite-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-api\1.69.1\e95c782de0217180c9b25c99e605c4513f3272f1\grpc-api-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ba603a8e5cd50a7c88cc1c83cedbafe1\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0c8e03626dc28f5f9dc8448d5c34665e\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a926d463d8bc11b6a56989994f2ab04b\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\7b3cc6000492dc33c90dd29cff242fc0\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.jimfs\jimfs\1.1\8fbd0579dc68aba6186935cc1bee21d2f3e7ec1c\jimfs-1.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d39db3e2bb8eabc6f903a2628da87060\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b7be0e674cfff653d96052a2ed393369\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\c8888889bd6c9fb2d62c8e8c83270314\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-core\1.69.1\d9f6383e1903af6e9502e7c1c8e4fbe28a236321\grpc-core-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ac4b5b33fddfdc313e8fd361c5b4cf17\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ae0b7f51ba92f967f0f64b6cc6ad2b83\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9b0e98629bc06f5b01cc526ebfdfc3c3\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.dagger\dagger\2.28.3\10d83810ef9e19714116ed518896c90c6606d633\dagger-2.28.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\33.3.1-jre\852f8b363da0111e819460021ca693cacca3e8db\guava-33.3.1-jre.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-context\1.69.1\acec56668f9e67775cfe43fdb9edd046e9426a2d\grpc-context-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\70ff4901493419b6018fee592dd41f27\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-runner\2.2.20\72475464f90c5f5aae5072edc60c2b29a8353f63\kotlin-compiler-runner-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-protobuf-lite\1.69.1\40cc0d2c62b22c7c22056e17c1141cb714993ea9\grpc-protobuf-lite-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\abi-tools-api\2.2.20\15daea957a282df212a7bc3189dbbf442b38dec8\abi-tools-api-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\572295668d113f8f3403b0d8f1f4e27b\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\68b1020472cc122cc79fe16c9a5bfefa\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9d04d315a102c441141d3be66524f20d\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b90d3ccdd27a09aadabddbd33719551c\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\410b73183f139835f68024b4a9e6d4c0\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.jimfs\jimfs\1.1\8fbd0579dc68aba6186935cc1bee21d2f3e7ec1c\jimfs-1.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.grpc\grpc-api\1.69.1\e95c782de0217180c9b25c99e605c4513f3272f1\grpc-api-1.69.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\410b73183f139835f68024b4a9e6d4c0\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.testing.platform\core-proto\0.0.9-alpha03\a0de640d69d847081f087c45dda7e9b3754fe350\core-proto-0.0.9-alpha03.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b90d3ccdd27a09aadabddbd33719551c\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4bb2857926d6bbf63c2a8489c429fa99\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1a1d3b61d5a868318f8594a976389b2b\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f6049f164ffac467b75ef5b04648323d\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4bb2857926d6bbf63c2a8489c429fa99\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.14\1194890e6f56ec29177673f2f12d0b8e627dec98\httpclient-4.5.14.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\51a414c4c9c4b32a924c8e4a23cbb69a\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1a1d3b61d5a868318f8594a976389b2b\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f6049f164ffac467b75ef5b04648323d\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4098eb03c15f4a3251f81b2a1e696f62\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\51a414c4c9c4b32a924c8e4a23cbb69a\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.16\51cf043c87253c9f58b539c9f7e44c8894223850\httpcore-4.4.16.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcprov-jdk18on\1.79\4d8e2732bcee15f1db93df266c3f5b70ce5cac21\bcprov-jdk18on-1.79.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.sun.activation\javax.activation\1.2.0\bf744c1e2776ed1de3c55c8dac1057ec331ef744\javax.activation-1.2.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android\signflinger\8.11.1\13f035dd8e7e470ff8f3216a0b46333187f26df5\signflinger-8.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f549838c74558208178b8bfbd791310f\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8f5c8fd8d8269f36bccd082577f3158f\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android\zipflinger\8.11.1\3a3b1786c331db72b9610eb1f68f0ec1ec9a1f\zipflinger-8.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0e90dc76f33a18be0c6378b4a75a4bd2\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\dc938b39cd61de7a1aad19154dc7d56e\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4d7bd30c65d85270e0aeebb00cd13cf8\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9b0e98629bc06f5b01cc526ebfdfc3c3\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.25.5\5ae5c9ec39930ae9b5a61b32b93288818ec05ec1\protobuf-java-3.25.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android\signflinger\8.11.1\13f035dd8e7e470ff8f3216a0b46333187f26df5\signflinger-8.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android\zipflinger\8.11.1\3a3b1786c331db72b9610eb1f68f0ec1ec9a1f\zipflinger-8.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.sun.activation\javax.activation\1.2.0\bf744c1e2776ed1de3c55c8dac1057ec331ef744\javax.activation-1.2.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.14\1194890e6f56ec29177673f2f12d0b8e627dec98\httpclient-4.5.14.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\047d1f8bd23fbbe23c6b5946a4d9ac0b\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f62290c4265fae9fb0cf357d49462801\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\net.sf.kxml\kxml2\2.3.0\ccbc77a5fd907ef863c29f3596c6f54ffa4e9442\kxml2-2.3.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\63e0a1f75d91cde9ecfd6e29ce3f4dc8\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\e0226a994236d7bf90152c665abe60df\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f62290c4265fae9fb0cf357d49462801\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8c12647086c0a3ca5d593c8e6e97b7eb\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b8079d1fae0d05aa66b43cc076d5b4e1\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\63e0a1f75d91cde9ecfd6e29ce3f4dc8\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android.tools\annotations\31.11.1\a9a04a78f42fdb0276a0fc7fd538890f856a9753\annotations-31.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8c12647086c0a3ca5d593c8e6e97b7eb\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.3.2\934c04d3cfef185a8008e7bf34331b79730a9d43\javax.annotation-api-1.3.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\dbc51a2bcdcfd61c4809207dba8141d7\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1a0a0713af8b54a270c4eaaffd9aac67\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna-platform\5.6.0\d18424ffb8bbfd036d71bcaab9b546858f2ef986\jna-platform-5.6.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jvnet.staxex\stax-ex\1.8.1\78011e483a21102fb4858f3e8f269a677e50aa23\stax-ex-1.8.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.googlecode.juniversalchardet\juniversalchardet\1.0.3\cd49678784c46aa8789c060538e0154013bb421b\juniversalchardet-1.0.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.16\51cf043c87253c9f58b539c9f7e44c8894223850\httpcore-4.4.16.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\14c019be493ae264b2e6c1e438d2fa1a\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\e42a750c36e19b8e76a9c03543f35c09\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\net.sf.kxml\kxml2\2.3.0\ccbc77a5fd907ef863c29f3596c6f54ffa4e9442\kxml2-2.3.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\18cfd198724ad0a42860b348d23cd2d0\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android.tools\annotations\31.11.1\a9a04a78f42fdb0276a0fc7fd538890f856a9753\annotations-31.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.3.2\934c04d3cfef185a8008e7bf34331b79730a9d43\javax.annotation-api-1.3.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a9bb419057f2ec78198df5a5329559ea\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9a9891476629ac44014c62adfce6452d\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a9bb419057f2ec78198df5a5329559ea\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0e4888efffc5b1de0f2cc5286369299e\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\fefff9ef1ad0af2b4d20e97600842cb4\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9a9891476629ac44014c62adfce6452d\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jvnet.staxex\stax-ex\1.8.1\78011e483a21102fb4858f3e8f269a677e50aa23\stax-ex-1.8.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-idea-proto\2.2.20\ccea68faf3074b47b2d1549d971d5438aae0adba\kotlin-gradle-plugin-idea-proto-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-klib-metadata\2.2.20\8a0c47f26e47702792fe0bbefbee6e8be12b3463\kotlin-util-klib-metadata-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0e4888efffc5b1de0f2cc5286369299e\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\jakarta.xml.bind\jakarta.xml.bind-api\2.3.2\8d49996a4338670764d7ca4b85a1c4ccf7fe665d\jakarta.xml.bind-api-2.3.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\c491d8608f57b6bb06428abd12a909c3\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\fefff9ef1ad0af2b4d20e97600842cb4\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9f7bf5a533b6fa8b7c91c970eaa2b8a2\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.googlecode.juniversalchardet\juniversalchardet\1.0.3\cd49678784c46aa8789c060538e0154013bb421b\juniversalchardet-1.0.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9d04d315a102c441141d3be66524f20d\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.api.grpc\proto-google-common-protos\2.48.0\86b550469172d830d174d7434c318d7dff179910\proto-google-common-protos-2.48.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\cf0bc295990994c9b29b9073cba028df\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0e91b944c0965dff3aa6b266d6d7e3ff\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\2.3.2\ce5be7da2e442c25ec14c766cb60cb802741727b\txw2-2.3.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\c491d8608f57b6bb06428abd12a909c3\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\3.0.8\d6a97364045aa6b99bf2d3c566a3f98599c2d296\istack-commons-runtime-3.0.8.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b964b2a10de25da1ef0fd6f921058bc2\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\6f8bdd5d75a2382fcea921634ccf18cb\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.auto.value\auto-value-annotations\1.6.2\ed193d86e0af90cc2342aedbe73c5d86b03fa09b\auto-value-annotations-1.6.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\3b4335f504d813e948ce06b361cf219d\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.sun.xml.fastinfoset\FastInfoset\1.2.16\4eb6a0adad553bf759ffe86927df6f3b848c8bea\FastInfoset-1.2.16.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\556ae3e1c71bbd42635f67cd5d39bd54\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.30.0\ff171acb7fb9cbe2b9f50b391e1d52459d30ee62\error_prone_annotations-2.30.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\jakarta.activation\jakarta.activation-api\1.2.1\562a587face36ec7eff2db7f2fc95425c6602bc1\jakarta.activation-api-1.2.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\6f8bdd5d75a2382fcea921634ccf18cb\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b964b2a10de25da1ef0fd6f921058bc2\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.21\4ec95b60d4e86b5c95a0e919cb172a0af98011ef\commons-compress-1.21.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\98983c29cf4256fb4da98235b55d1738\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a30f9d1624d42656dc5ddad636319598\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\jakarta.xml.bind\jakarta.xml.bind-api\2.3.2\8d49996a4338670764d7ca4b85a1c4ccf7fe665d\jakarta.xml.bind-api-2.3.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\54d18559aa0d754e0c320e35261e9a23\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\dfeb121227600ddbda1a313345a55030\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a85259a73e41781997dcd9bd2a0b8352\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\3.0.8\d6a97364045aa6b99bf2d3c566a3f98599c2d296\istack-commons-runtime-3.0.8.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.bitbucket.b_c\jose4j\0.9.5\e4ca26802488e6f16e24558d74ac8775a955fdd3\jose4j-0.9.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.30\b5a4b6d16ab13e34a88fae84c35cd5d68cac922c\slf4j-api-1.7.30.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.auto.value\auto-value-annotations\1.6.2\ed193d86e0af90cc2342aedbe73c5d86b03fa09b\auto-value-annotations-1.6.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\58004fb02668d400301539bc7fd0023b\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d8695b060e50975c4594c2fcb6098560\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\2.3.2\ce5be7da2e442c25ec14c766cb60cb802741727b\txw2-2.3.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\690c25f10c063e8e6b7faee2805e23dd\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\jakarta.activation\jakarta.activation-api\1.2.1\562a587face36ec7eff2db7f2fc95425c6602bc1\jakarta.activation-api-1.2.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1ef72c027cfce280b0685d794f83b0ea\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\58004fb02668d400301539bc7fd0023b\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4cd17ccd69a423c77b4cc921baa79a8e\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d8695b060e50975c4594c2fcb6098560\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.30.0\ff171acb7fb9cbe2b9f50b391e1d52459d30ee62\error_prone_annotations-2.30.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\085ab5d22c0c73b805b5ceab6a9ea7ff\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna-platform\5.6.0\d18424ffb8bbfd036d71bcaab9b546858f2ef986\jna-platform-5.6.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\3871849f067229dac404822e0cc10652\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\83c733493e2ffb6ca81f2223bd181a35\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jdom\jdom2\2.0.6\6f14738ec2e9dd0011e343717fa624a10f8aab64\jdom2-2.0.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ff6a1bb7a507a1a181d4b78d7af0e7b2\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.30\b5a4b6d16ab13e34a88fae84c35cd5d68cac922c\slf4j-api-1.7.30.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\3.0.0\7399e65dd7e9ff3404f4535b2f017093bdb134c7\j2objc-annotations-3.0.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.android\annotations\4.1.1.4\a1678ba907bf92691d879fef34e1a187038f9259\annotations-4.1.1.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\83c733493e2ffb6ca81f2223bd181a35\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ccd4d5146633deeb32e056fb256bbedb\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.24\aa9ba58d30e0aad7f1808fce9c541ea3760678d8\animal-sniffer-annotations-1.24.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.sun.xml.fastinfoset\FastInfoset\1.2.16\4eb6a0adad553bf759ffe86927df6f3b848c8bea\FastInfoset-1.2.16.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a0e2bfed85522706092d9fc4609f3f23\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\33.3.1-jre\852f8b363da0111e819460021ca693cacca3e8db\guava-33.3.1-jre.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.dagger\dagger\2.28.3\10d83810ef9e19714116ed518896c90c6606d633\dagger-2.28.3.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\693f17cc417df07037805c788113211e\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\012fc5af648bfcebedf57251c50d06fb\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\258f818554dce19ee6fd62ac7683d3ea\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\617ef37ad16b012eb8c48e988c6f42af\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f51ccf8076d57690ada9d88dd133c67d\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ccd4d5146633deeb32e056fb256bbedb\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.perfmark\perfmark-api\0.27.0\f86f575a41b091786a4b027cd9c0c1d2e3fc1c01\perfmark-api-0.27.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0539fa9ce4a552e6547543e3cb637c3a\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.bitbucket.b_c\jose4j\0.9.5\e4ca26802488e6f16e24558d74ac8775a955fdd3\jose4j-0.9.5.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\78583f17d4edeeba34d50f9204b52fbe\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f51ccf8076d57690ada9d88dd133c67d\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\617ef37ad16b012eb8c48e988c6f42af\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0539fa9ce4a552e6547543e3cb637c3a\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.android\annotations\4.1.1.4\a1678ba907bf92691d879fef34e1a187038f9259\annotations-4.1.1.4.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec-http2\4.1.110.Final\e0849843eb5b1c036b12551baca98a9f7ff847a0\netty-codec-http2-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\12ac1fa3e42bff7232ea702e0d9b3541\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.24\aa9ba58d30e0aad7f1808fce9c541ea3760678d8\animal-sniffer-annotations-1.24.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\6133e5f6d0c97db3ac5bdf0126bb4bfe\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\3.0.0\7399e65dd7e9ff3404f4535b2f017093bdb134c7\j2objc-annotations-3.0.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\78583f17d4edeeba34d50f9204b52fbe\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\5823a3e56b0d1281b618f8c4187c5d71\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a47304130ebf78a352909df4f53ef425\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler-proxy\4.1.110.Final\b7fb401dd47c79e6b99f2319ac3b561c50c31c30\netty-handler-proxy-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec-http\4.1.110.Final\9d05cd927209ea25bbf342962c00b8e5a828c2a4\netty-codec-http-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\2d6ad7057afe351af184d49f5efa7fa0\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\aefc368a93e52b1bac93920cb90c8b48\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler\4.1.110.Final\168db749c22652ee7fed1ebf7ec46ce856d75e51\netty-handler-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\5823a3e56b0d1281b618f8c4187c5d71\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9af7bbfb241ddadd833cac2fd6839dcf\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a769d973db02a968e952f8c3419aee7d\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.perfmark\perfmark-api\0.27.0\f86f575a41b091786a4b027cd9c0c1d2e3fc1c01\perfmark-api-0.27.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\e445e3f8f34654a61a58b4cd542d7250\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.43.0\9425eee39e56b116d2b998b7c2cebcbd11a3c98b\checker-qual-3.43.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-unix-common\4.1.110.Final\a7096e7c0a25a983647909d7513f5d4943d589c0\netty-transport-native-unix-common-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\2d6ad7057afe351af184d49f5efa7fa0\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\85fd8aab7b438e780eb39fbbffb125ca\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9af7bbfb241ddadd833cac2fd6839dcf\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\25af1a88d709d00689f755165aa30e73\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\d646c2b86fce2b7bb0e9e0efebb876dc\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-annotations\2.2.20\cb3940a092ab27344aa290973ebb6c14fb344ac9\kotlin-gradle-plugin-annotations-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android.tools.build\apksig\8.11.1\f005788487574c7d6ba23dea63bf8cb3a4f164a6\apksig-8.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9a9c0feccb1bcc97fcabb45bf188537f\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ce9b3b742e83af7d7971a0ca3d505fd5\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.5.0\81241ff7078ef14f42ea2a8995fa09c096256e6b\javawriter-2.5.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler-proxy\4.1.110.Final\b7fb401dd47c79e6b99f2319ac3b561c50c31c30\netty-handler-proxy-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jdom\jdom2\2.0.6\6f14738ec2e9dd0011e343717fa624a10f8aab64\jdom2-2.0.6.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9a9c0feccb1bcc97fcabb45bf188537f\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-native-utils\2.2.20\d0758b001901331bdc5e3860dcc72dc889a1c632\kotlin-native-utils-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ff2d9a3e6ae2be22cf119da8a27dc828\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-unix-common\4.1.110.Final\a7096e7c0a25a983647909d7513f5d4943d589c0\netty-transport-native-unix-common-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.43.0\9425eee39e56b116d2b998b7c2cebcbd11a3c98b\checker-qual-3.43.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\bd10017e77417f6c915ea75e791f035c\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b821ff0434c1723e971bd43ad962b661\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9dad9b5fb77ecff9fde40c92e6a29219\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\580e65b52f76f0c7b6f7c7b8c21a3700\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-annotations\2.2.20\cb3940a092ab27344aa290973ebb6c14fb344ac9\kotlin-gradle-plugin-annotations-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-tooling-core\2.2.20\685151c03e638207a3b5045002411fbef78fdeb\kotlin-tooling-core-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a44c5e075807c9b3926df6dec7cdca61\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9959672e80692bcb4c4f8705bde2440a\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9dad9b5fb77ecff9fde40c92e6a29219\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec-http2\4.1.110.Final\e0849843eb5b1c036b12551baca98a9f7ff847a0\netty-codec-http2-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.21\4ec95b60d4e86b5c95a0e919cb172a0af98011ef\commons-compress-1.21.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\66cf9f32d31e7ae111df3d4b3e862abe\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\580e65b52f76f0c7b6f7c7b8c21a3700\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\2d8d35d1bad59becb3d269f4fab6ba87\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\a44c5e075807c9b3926df6dec7cdca61\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9959672e80692bcb4c4f8705bde2440a\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.5.0\81241ff7078ef14f42ea2a8995fa09c096256e6b\javawriter-2.5.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\686bf4cfe7f84bbadfff8cfc881e76ad\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b4e207aa96e8d470c5c1c936134d8f4c\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-build-tools-api\2.2.20\d5517ea764cf72042e5fadbcd48152998d151082\kotlin-build-tools-api-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\2d8d35d1bad59becb3d269f4fab6ba87\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8e362c5f3c362fbc630f6643bca41639\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\1670981801fba7db1d66d469f2769c8a\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler\4.1.110.Final\168db749c22652ee7fed1ebf7ec46ce856d75e51\netty-handler-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-native-utils\2.2.20\d0758b001901331bdc5e3860dcc72dc889a1c632\kotlin-native-utils-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-daemon-client\2.2.20\1a5198f177c695bba2473b60d08f86471f4542cf\kotlin-daemon-client-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.android.tools.build\apksig\8.11.1\f005788487574c7d6ba23dea63bf8cb3a4f164a6\apksig-8.11.1.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec-http\4.1.110.Final\9d05cd927209ea25bbf342962c00b8e5a828c2a4\netty-codec-http-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-io\2.2.20\6c10468e852a6bceb4fbdeadf607ed92ad9f2d8e\kotlin-util-io-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-klib\2.2.20\d2530c797582f1f3b4c22d4b8a3ee134b16489ee\kotlin-util-klib-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-core-jvm\1.8.0\ac1dc37a30a93150b704022f8d895ee1bd3a36b3\kotlinx-coroutines-core-jvm-1.8.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.2\c4a06a64e650562f30b7bf9aaec1bfed43aca12b\failureaccess-1.0.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8e362c5f3c362fbc630f6643bca41639\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\059495c8615bae36d0fc93a846ab4920\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\851a8d82aa61cafccf7aec1643716785\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ac4c639497bc2c8378128d047bb07060\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-tooling-core\2.2.20\685151c03e638207a3b5045002411fbef78fdeb\kotlin-tooling-core-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b61fb44fc1d8321fadf92de7a61bc6d5\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\dd8a2aee7e449ddba7026d5522c99b95\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\73d7aee7943ace8c8befbe8218d06065\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\889766a1f9dafa057e5b6dcf15b1f1fd\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\974d2a9dc590284d88a1468f13c7e796\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\059495c8615bae36d0fc93a846ab4920\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\cf97adca77763a8fee7c3a450ae5617f\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\cc26bb6f1faed16f0f96d3d35df77724\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-build-tools-api\2.2.20\d5517ea764cf72042e5fadbcd48152998d151082\kotlin-build-tools-api-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b61fb44fc1d8321fadf92de7a61bc6d5\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\dd8a2aee7e449ddba7026d5522c99b95\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0351b43ad8fd7f1c9e3d26f252940e1b\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\cc26bb6f1faed16f0f96d3d35df77724\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f2b49d4e82f07730daf3787ec8081650\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ec41b8f9404b13e8f716ddadd79bd47c\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0351b43ad8fd7f1c9e3d26f252940e1b\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.11\3acb4705652e16236558f0f4f2192cc33c3bd189\commons-codec-1.11.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\5.6.0\330f2244e9030119ab3030fc3fededc86713d9cc\jna-5.6.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec-socks\4.1.110.Final\4d54c8d5b95b14756043efb59b8c3e62ec67aa43\netty-codec-socks-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-io\2.2.20\6c10468e852a6bceb4fbdeadf607ed92ad9f2d8e\kotlin-util-io-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\677a1829d77c1f5248ce88c9e300d627\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-daemon-client\2.2.20\1a5198f177c695bba2473b60d08f86471f4542cf\kotlin-daemon-client-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.2\c4a06a64e650562f30b7bf9aaec1bfed43aca12b\failureaccess-1.0.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\92d666306683c15242ab4a9b474300b4\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\ec41b8f9404b13e8f716ddadd79bd47c\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec\4.1.110.Final\f1fa43b03e93ab88e805b6a4e3e83780c80b47d2\netty-codec-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\9f6c535fbf6e6d52ba5223565f23c556\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\6d5f3779f1e32194d023b01a51f2c405\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\677a1829d77c1f5248ce88c9e300d627\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport\4.1.110.Final\b91f04c39ac14d6a29d07184ef305953ee6e0348\netty-transport-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4eda740bb6ccf2909ae408fcc443d9fd\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\759799d65a4697f51574c45f4979626b\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\4eda740bb6ccf2909ae408fcc443d9fd\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\7cbeaea6a16b0a1fb92eb21d4e112a04\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-resolver\4.1.110.Final\66c15921104cda0159b34e316541bc765dfaf3c0\netty-resolver-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.11\3acb4705652e16236558f0f4f2192cc33c3bd189\commons-codec-1.11.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-buffer\4.1.110.Final\3d918a9ee057d995c362902b54634fc307132aac\netty-buffer-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec-socks\4.1.110.Final\4d54c8d5b95b14756043efb59b8c3e62ec67aa43\netty-codec-socks-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\811a8f282e64cbbe31d405fcef77512d\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\5.6.0\330f2244e9030119ab3030fc3fededc86713d9cc\jna-5.6.0.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-klib\2.2.20\d2530c797582f1f3b4c22d4b8a3ee134b16489ee\kotlin-util-klib-2.2.20.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-common\4.1.110.Final\ec361e7e025c029be50c55c8480080cabcbc01e7\netty-common-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\aaf65b034e0f1fd3f2cb075844464f06\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0ce7819b10b47dfb5e958d54d5f8b038\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\io.netty\netty-resolver\4.1.110.Final\66c15921104cda0159b34e316541bc765dfaf3c0\netty-resolver-4.1.110.Final.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8454090a5b20928e6b4b38efeaa490fe\transformed\analysis\instrumentation-hierarchy.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\8454090a5b20928e6b4b38efeaa490fe\transformed\analysis\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for MergeInstrumentationAnalysisTransform: C:\Users\Gari Iriana\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcutil-jdk18on\1.79\ecfc5aef97cc7676ea0de5c53c407b9f533f0ad5\bcutil-jdk18on-1.79.jar because:
+  Build cache is disabled
+  Caching not enabled.
+Caching disabled for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\0b30fe0f7356bd7796022624ec6c305e\transformed\merge\instrumentation-dependencies.bin because:
+  Build cache is disabled
+  Caching not enabled.
+./gradlew : 
+At line:1 char:1
++ ./gradlew assembleDebug --stacktrace --info > build_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not resolve all artifacts for configuration 'classpath'.
+> Failed to transform protos-31.11.1.jar (com.android.tools.analytics-library:protos:31.11.1) to match attributes 
+{artifactType=jar, org.gradle.category=library, org.gradle.internal.instrumented=instrumented-and-upgraded, 
+org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\83b7a66581fb52d70a2ad433fa2077f9\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create Jar file C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\7afb3cd755f1512c72594c484dd71301-
+6ede1b9e-5912-41b4-8d07-4bfd7fb896e2\transformed\instrumented\instrumented-protos-31.11.1.jar.
+> Failed to transform bcutil-jdk18on-1.79.jar (org.bouncycastle:bcutil-jdk18on:1.79) to match attributes 
+{artifactType=jar, org.gradle.category=library, org.gradle.internal.instrumented=instrumented-and-upgraded, 
+org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\0b30fe0f7356bd7796022624ec6c305e\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create directory 'C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\354aa8c924fd9d7d66c3c31cc95bea5
+7-1c1619e9-00c5-489d-be27-a94593d3dd68\transformed\instrumented'
+> Failed to transform bcprov-jdk18on-1.79.jar (org.bouncycastle:bcprov-jdk18on:1.79) to match attributes 
+{artifactType=jar, org.gradle.category=library, org.gradle.internal.instrumented=instrumented-and-upgraded, 
+org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\8f5c8fd8d8269f36bccd082577f3158f\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create Jar file C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\f7d5caa793720e5ccdac944d640af5f3-
+6d7d5188-b206-4f5b-ab25-da9b0cee860b\transformed\instrumented\instrumented-bcprov-jdk18on-1.79.jar.
+> Failed to transform kotlinx-coroutines-core-jvm-1.8.0.jar (org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.0) 
+to match attributes {artifactType=jar, org.gradle.category=library, 
+org.gradle.internal.instrumented=instrumented-and-upgraded, org.gradle.libraryelements=jar, org.gradle.status=release, 
+org.gradle.usage=java-runtime, org.jetbrains.kotlin.platform.type=jvm}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\73d7aee7943ace8c8befbe8218d06065\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create Jar file C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\900c1c1d35cfa6bf83b400354c5fee26-
+2aec7cc5-b68e-470b-b25f-83eb5686601c\transformed\instrumented\instrumented-kotlinx-coroutines-core-jvm-1.8.0.jar.
+> Failed to transform netty-codec-4.1.110.Final.jar (io.netty:netty-codec:4.1.110.Final) to match attributes 
+{artifactType=jar, org.gradle.category=library, org.gradle.internal.instrumented=instrumented-and-upgraded, 
+org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\759799d65a4697f51574c45f4979626b\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create Jar file C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\3d7970c9696c586dc760d4b0d62fbacb-
+f152c9d8-dfb5-40b5-bf51-32da46ae9d14\transformed\instrumented\instrumented-netty-codec-4.1.110.Final.jar.
+> Failed to transform netty-transport-4.1.110.Final.jar (io.netty:netty-transport:4.1.110.Final) to match attributes 
+{artifactType=jar, org.gradle.category=library, org.gradle.internal.instrumented=instrumented-and-upgraded, 
+org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\7cbeaea6a16b0a1fb92eb21d4e112a04\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create Jar file C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b7b328ddefe21ab638373762dcd2eaab-
+e4a51e55-b183-4bc4-a446-03d826e35fa9\transformed\instrumented\instrumented-netty-transport-4.1.110.Final.jar.
+> Failed to transform netty-buffer-4.1.110.Final.jar (io.netty:netty-buffer:4.1.110.Final) to match attributes 
+{artifactType=jar, org.gradle.category=library, org.gradle.internal.instrumented=instrumented-and-upgraded, 
+org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\aaf65b034e0f1fd3f2cb075844464f06\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create Jar file C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\b6cf27e9f6f9e80951facb4401f132d3-
+ea2c28bd-33e4-4755-9ef4-0bfa78c43c68\transformed\instrumented\instrumented-netty-buffer-4.1.110.Final.jar.
+> Failed to transform netty-common-4.1.110.Final.jar (io.netty:netty-common:4.1.110.Final) to match attributes 
+{artifactType=jar, org.gradle.category=library, org.gradle.internal.instrumented=instrumented-and-upgraded, 
+org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+   > Execution failed for ExternalDependencyInstrumentingArtifactTransform: C:\Users\Gari Iriana\.gradle\caches\8.14\tr
+ansforms\0ce7819b10b47dfb5e958d54d5f8b038\transformed\merge\instrumentation-dependencies.bin.
+      > Failed to create directory 'C:\Users\Gari Iriana\.gradle\caches\8.14\transforms\e370d59de50d7e6614db492986252e6
+d-48ce2bde-9184-4a8a-b636-e569746408d5\transformed\instrumented'
+
+* Try:
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.internal.artifacts.ivyservice.TypedResolveException: Could not resolve all artifacts for configuration 
+'classpath'.
+	at org.gradle.api.internal.artifacts.ResolveExceptionMapper.mapFailures(ResolveExceptionMapper.java:61)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$DefaultResolutionHost.consolidateFailures(Def
+aultConfiguration.java:1931)
+	at org.gradle.api.internal.artifacts.configurations.ResolutionHost.rethrowFailuresAndReportProblems(ResolutionHost.jav
+a:75)
+	at org.gradle.api.internal.artifacts.configurations.DefaultArtifactCollection.lambda$new$0(DefaultArtifactCollection.j
+ava:53)
+	at org.gradle.internal.model.CalculatedValueContainerFactory$SupplierBackedCalculator.calculateValue(CalculatedValueCo
+ntainerFactory.java:69)
+	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.lambda$attachValue$0(CalculatedValueContainer.j
+ava:229)
+	at org.gradle.internal.Try.ofFailable(Try.java:50)
+	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.attachValue(CalculatedValueContainer.java:224)
+	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:195)
+	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:186)
+	at org.gradle.api.internal.artifacts.configurations.DefaultArtifactCollection.ensureResolved(DefaultArtifactCollection
+.java:104)
+	at org.gradle.api.internal.artifacts.configurations.DefaultArtifactCollection.getArtifacts(DefaultArtifactCollection.j
+ava:76)
+	at org.gradle.api.internal.initialization.transform.utils.InstrumentationClasspathMerger.mergeToClasspath(Instrumentat
+ionClasspathMerger.java:60)
+	at org.gradle.api.internal.initialization.DefaultScriptClassPathResolver.resolveClassPath(DefaultScriptClassPathResolv
+er.java:155)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuilder.lambda$resolveClassPath$0(DefaultBuildLogicBuilder.
+java:64)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue.doBuild(DefaultBuildLogicBuildQueue.java:96)
+	at 
+org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue.lambda$build$0(DefaultBuildLogicBuildQueue.java:78)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue.lambda$withBuildLogicQueueLock$4(DefaultBuildLog
+icBuildQueue.java:119)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue.withBuildLogicQueueLock(DefaultBuildLogicBuildQu
+eue.java:114)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue.access$000(DefaultBuildLogicBuildQueue.java:42)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue$1.call(DefaultBuildLogicBuildQueue.java:103)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperati
+onRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue.withBuildLogicQueueLockInBuildOperation(DefaultB
+uildLogicBuildQueue.java:100)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuildQueue.build(DefaultBuildLogicBuildQueue.java:76)
+	at org.gradle.api.internal.initialization.DefaultBuildLogicBuilder.resolveClassPath(DefaultBuildLogicBuilder.java:61)
+	at org.gradle.api.internal.initialization.DefaultScriptHandler.lambda$getInstrumentedScriptClassPath$0(DefaultScriptHa
+ndler.java:109)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.callAndResetResolutionState(DefaultConfigurat
+ion.java:900)
+	at org.gradle.api.internal.initialization.DefaultScriptHandler.getInstrumentedScriptClassPath(DefaultScriptHandler.jav
+a:113)
+	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.applyPlugins(DefaultPluginRequestApplicator.java:129)
+	at org.gradle.kotlin.dsl.provider.PluginRequestsHandler.handle(PluginRequestsHandler.kt:45)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost.applyPluginsTo(KotlinScriptEvaluator.k
+t:242)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.applyPluginsTo(Interpreter.kt:387)
+	at Program.execute(Unknown Source)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.eval(Interpreter.kt:516)
+	at org.gradle.kotlin.dsl.execution.Interpreter.eval(Interpreter.kt:214)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator.evaluate(KotlinScriptEvaluator.kt:133)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPluginFactory$create$1.invoke(KotlinScriptPluginFactory.kt:61)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPluginFactory$create$1.invoke(KotlinScriptPluginFactory.kt:52)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPlugin.apply(KotlinScriptPlugin.kt:35)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)

@@ -11,3 +11,12 @@ mobile/.flutter-plugins*
 backend/.env*
 backend/serviceAccountKey.json
 backend/vendor/
+
+# Extra ignores for clean repo
+mobile/android/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/build_locked_*/
+mobile/build_stabilized*
+*.log
+
