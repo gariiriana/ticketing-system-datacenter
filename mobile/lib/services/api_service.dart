@@ -13,6 +13,22 @@ class ApiService {
     return await FirebaseAuth.instance.currentUser?.getIdToken();
   }
 
+  Future<void> syncProfile() async {
+    final token = await _getToken();
+    if (token == null) throw Exception('Tidak terautentikasi');
+
+    final response = await http
+        .get(
+          Uri.parse('$_baseUrl/user/sync'),
+          headers: _authHeaders(token),
+        )
+        .timeout(const Duration(seconds: 15));
+
+    if (response.statusCode != 200) {
+      throw Exception('Gagal sinkronisasi profile: ${response.body}');
+    }
+  }
+
   Map<String, String> _authHeaders(String token) => {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer $token',
@@ -59,7 +75,8 @@ class ApiService {
     }
   }
 
-  Future<void> updateTicketStatus(String ticketId, String status) async {
+  Future<void> updateTicketStatus(String ticketId, String status,
+      {String? reason}) async {
     final token = await _getToken();
     if (token == null) throw Exception('Tidak terautentikasi');
 
@@ -67,7 +84,10 @@ class ApiService {
         .patch(
           Uri.parse('$_baseUrl/tickets/$ticketId'),
           headers: _authHeaders(token),
-          body: jsonEncode({'status': status}),
+          body: jsonEncode({
+            'status': status,
+            'reason': reason ?? '',
+          }),
         )
         .timeout(const Duration(seconds: 15));
 

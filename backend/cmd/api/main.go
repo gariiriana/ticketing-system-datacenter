@@ -84,6 +84,7 @@ func main() {
 	ticketRepo := repository.NewTicketRepository(repository.DB)
 	ticketSvc := service.NewTicketService(ticketRepo)
 	ticketCtrl := controllers.NewTicketController(ticketSvc)
+	userCtrl := controllers.NewUserController(authClient)
 
 	// Set Gin Mode
 	gin.SetMode(cfg.GinMode)
@@ -114,6 +115,7 @@ func main() {
 	api := r.Group("/api/v1")
 	api.Use(middleware.AuthMiddleware(authClient))
 	{
+		api.GET("/user/sync", userCtrl.SyncUser)
 		api.GET("/tickets", ticketCtrl.GetTickets)
 		api.POST("/tickets", ticketCtrl.CreateTicket)
 		api.PATCH("/tickets/:id", ticketCtrl.UpdateStatus)

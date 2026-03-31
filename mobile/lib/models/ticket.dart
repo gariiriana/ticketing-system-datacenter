@@ -5,6 +5,7 @@ class Ticket {
   final String siteId;
   final String photoUrl;
   final DateTime createdAt;
+  final String rejectionReason;
 
   Ticket({
     required this.id,
@@ -13,6 +14,7 @@ class Ticket {
     required this.siteId,
     required this.photoUrl,
     required this.createdAt,
+    this.rejectionReason = '',
   });
 
   factory Ticket.fromJson(Map<String, dynamic> json) {
@@ -23,6 +25,7 @@ class Ticket {
       siteId: json['site_id'],
       photoUrl: json['photo_url'] ?? '',
       createdAt: DateTime.parse(json['created_at']),
+      rejectionReason: json['rejection_reason'] ?? '',
     );
   }
 
@@ -34,6 +37,7 @@ class Ticket {
       'site_id': siteId,
       'photo_url': photoUrl,
       'created_at': createdAt.toIso8601String(),
+      'rejection_reason': rejectionReason,
     };
   }
 }

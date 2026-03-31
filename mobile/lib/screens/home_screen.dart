@@ -48,18 +48,33 @@ class _HomeScreenState extends State<HomeScreen> {
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: const Color(0xFF1E1E2E),
-        title: const Text('Log Out', style: TextStyle(color: Colors.white)),
-        content: const Text('Are you sure you want to log out?',
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Row(
+          children: [
+            Icon(Icons.logout_rounded, color: Colors.redAccent),
+            SizedBox(width: 12),
+            Text('Keluar Akun',
+                style: TextStyle(
+                    color: Colors.white, fontWeight: FontWeight.bold)),
+          ],
+        ),
+        content: const Text(
+            'Apakah Anda yakin ingin keluar dari aplikasi TIKET DACEN?',
             style: TextStyle(color: Colors.white70)),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text('Cancel'),
+            child: const Text('Batal', style: TextStyle(color: Colors.white38)),
           ),
-          TextButton(
+          ElevatedButton(
             onPressed: () => Navigator.pop(ctx, true),
-            style: TextButton.styleFrom(foregroundColor: Colors.redAccent),
-            child: const Text('Logout'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.redAccent,
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+            ),
+            child: const Text('Ya, Keluar'),
           ),
         ],
       ),
@@ -107,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            expandedHeight: 140,
+            expandedHeight: 160,
             floating: false,
             pinned: true,
             backgroundColor: const Color(0xFF1E1E2E),
@@ -129,43 +144,36 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Row(
                           children: [
-                            CircleAvatar(
-                              radius: 20,
-                              backgroundColor: const Color(0xFF6C63FF),
-                              child: Text(
-                                (_userEmail ?? 'U')[0].toUpperCase(),
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
+                            Container(
+                              padding: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Image.asset(
+                                'assets/images/logo_dme.png',
+                                width: 24,
+                                height: 24,
+                                fit: BoxFit.contain,
                               ),
                             ),
                             const SizedBox(width: 12),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  _userEmail ?? 'User',
-                                  style: const TextStyle(
+                                const Text(
+                                  'PT DWI MITRA EKATAMA MANDIRI',
+                                  style: TextStyle(
                                     color: Colors.white,
+                                    fontSize: 12,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8, vertical: 2),
-                                  decoration: BoxDecoration(
-                                    color: isAdmin
-                                        ? Colors.purpleAccent.withValues(alpha: 0.3)
-                                        : Colors.blueAccent.withValues(alpha: 0.3),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Text(
-                                    isAdmin ? '👮 Admin' : '👷 Engineer',
-                                    style: const TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12,
-                                    ),
+                                Text(
+                                  _userEmail ?? 'User',
+                                  style: const TextStyle(
+                                    color: Colors.white70,
+                                    fontSize: 11,
                                   ),
                                 ),
                               ],
@@ -186,8 +194,13 @@ class _HomeScreenState extends State<HomeScreen> {
               titlePadding: const EdgeInsets.only(left: 16, bottom: 16),
             ),
             title: const Text(
-              'Tiket Kendala',
-              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              'TIKET DACEN',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                letterSpacing: 1.5,
+              ),
             ),
           ),
           SliverToBoxAdapter(

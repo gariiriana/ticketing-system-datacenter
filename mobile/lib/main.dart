@@ -4,31 +4,37 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
 
+final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
+  String? initError;
   try {
-    // Beri timeout agar tidak menunggu selamanya jika internet bermasalah
-    await Firebase.initializeApp().timeout(const Duration(seconds: 10));
+    await Firebase.initializeApp();
   } catch (e) {
-    debugPrint('Firebase init error or timeout: $e');
-    // Kita tetap lanjut ke app, biar UI yang handle state login
+    initError = e.toString();
+    debugPrint('Firebase init error: $e');
   }
   
-  runApp(const MyApp());
+  runApp(MyApp(initError: initError));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final String? initError;
+  const MyApp({super.key, this.initError});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scaffoldMessengerKey: scaffoldMessengerKey,
       title: 'TIKET DACEN',
       debugShowCheckedModeBanner: false,
+      // ... (rest of theme)
       theme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
+        // ... (preserving theme colors)
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF6C63FF),
           brightness: Brightness.dark,
@@ -89,7 +95,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: StreamBuilder<User?>(
+      home: initError != null 
+          ? Scaffold(body: Center(child: Text('Firebase Error:\n$initError', textAlign: TextAlign.center, style: const TextStyle(color: Colors.redAccent))))
+          : StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {

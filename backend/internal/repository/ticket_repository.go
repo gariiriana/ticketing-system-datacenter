@@ -41,7 +41,7 @@ func (r *TicketRepository) Create(ctx context.Context, ticket *models.Ticket) er
 }
 
 func (r *TicketRepository) GetAll(ctx context.Context) ([]models.Ticket, error) {
-	query := `SELECT id, user_id, site_id, description, status, photo_url, created_at, approved_by, approved_at FROM tickets ORDER BY created_at DESC`
+	query := `SELECT id, user_id, site_id, description, status, photo_url, created_at, approved_by, approved_at, rejection_reason FROM tickets ORDER BY created_at DESC`
 	rows, err := r.db.QueryContext(ctx, query)
 	if err != nil {
 		return nil, fmt.Errorf("failed to query tickets: %w", err)
@@ -61,6 +61,7 @@ func (r *TicketRepository) GetAll(ctx context.Context) ([]models.Ticket, error) 
 			&t.CreatedAt,
 			&t.ApprovedBy,
 			&t.ApprovedAt,
+			&t.RejectionReason,
 		)
 		if err != nil {
 			return nil, fmt.Errorf("failed to scan ticket: %w", err)
@@ -71,14 +72,14 @@ func (r *TicketRepository) GetAll(ctx context.Context) ([]models.Ticket, error) 
 	return tickets, nil
 }
 
-func (r *TicketRepository) UpdateStatus(ctx context.Context, id string, status models.TicketStatus, approvedBy string) error {
+func (r *TicketRepository) UpdateStatus(ctx context.Context, id string, status models.TicketStatus, approvedBy string, reason string) error {
 	query := `
 		UPDATE tickets 
-		SET status = $1, approved_by = $2, approved_at = $3
-		WHERE id = $4
+		SET status = $1, approved_by = $2, approved_at = $3, rejection_reason = $4
+		WHERE id = $5
 	`
 	now := time.Now()
-	_, err := r.db.ExecContext(ctx, query, status, approvedBy, now, id)
+	_, err := r.db.ExecContext(ctx, query, status, approvedBy, now, reason, id)
 	if err != nil {
 		return fmt.Errorf("failed to update ticket status: %w", err)
 	}

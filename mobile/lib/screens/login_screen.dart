@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../services/api_service.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,6 +11,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen>
     with SingleTickerProviderStateMixin {
+  final ApiService _apiService = ApiService();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   bool _isLoading = false;
@@ -53,20 +55,21 @@ class _LoginScreenState extends State<LoginScreen>
 
     setState(() => _isLoading = true);
     try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
+      final userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
       );
+
+      // Sync role with backend and force token refresh
+      if (userCredential.user != null) {
+        await _apiService.syncProfile();
+        await userCredential.user!.getIdToken(true);
+      }
+      
       // Auth state change in main.dart will handle navigation
     } catch (e) {
       if (mounted) {
-        String errorMsg = 'Login gagal. Periksa email dan password Anda.';
-        if (e.toString().contains('user-not-found')) {
-          errorMsg = 'Email tidak terdaftar.';
-        } else if (e.toString().contains('wrong-password') ||
-            e.toString().contains('invalid-credential')) {
-          errorMsg = 'Password salah.';
-        }
+        String errorMsg = 'Login gagal: $e';
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(errorMsg),
@@ -106,25 +109,23 @@ class _LoginScreenState extends State<LoginScreen>
 
                   // Logo / Hero
                   Container(
-                    width: 80,
-                    height: 80,
+                    width: 100,
+                    height: 100,
+                    padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFF6C63FF), Color(0xFF9C27B0)],
-                      ),
-                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF6C63FF).withValues(alpha: 0.4),
-                          blurRadius: 20,
-                          offset: const Offset(0, 8),
+                          color: const Color(0xFF6C63FF).withValues(alpha: 0.3),
+                          blurRadius: 30,
+                          offset: const Offset(0, 10),
                         ),
                       ],
                     ),
-                    child: const Icon(
-                      Icons.construction_rounded,
-                      color: Colors.white,
-                      size: 40,
+                    child: Image.asset(
+                      'assets/images/logo_dme.png',
+                      fit: BoxFit.contain,
                     ),
                   ),
                   const SizedBox(height: 24),

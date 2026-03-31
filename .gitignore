@@ -17,6 +17,7 @@ mobile/android/build/
 mobile/android/.gradle/
 mobile/android/local.properties
 mobile/build_locked_*/
+mobile/build_trash_*/
 mobile/build_stabilized*
 *.log
 

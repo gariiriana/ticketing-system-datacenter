@@ -21,32 +21,85 @@ class _TicketDetailScreenState extends State<TicketDetailScreen> {
   bool _isLoading = false;
 
   Future<void> _updateStatus(String newStatus) async {
+    final reasonController = TextEditingController();
+
     final confirm = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: const Color(0xFF1E1E2E),
-        title: Text(
-          newStatus == 'approved' ? 'Approve Tiket?' : 'Reject Tiket?',
-          style: const TextStyle(color: Colors.white),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Row(
+          children: [
+            Icon(
+              newStatus == 'approved'
+                  ? Icons.check_circle_rounded
+                  : Icons.cancel_rounded,
+              color: newStatus == 'approved'
+                  ? Colors.greenAccent
+                  : Colors.redAccent,
+            ),
+            const SizedBox(width: 12),
+            Text(
+              newStatus == 'approved' ? 'Approve Tiket?' : 'Reject Tiket?',
+              style: const TextStyle(
+                  color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+          ],
         ),
-        content: Text(
-          'Apakah Anda yakin ingin ${newStatus == 'approved' ? 'menyetujui' : 'menolak'} tiket ini?',
-          style: const TextStyle(color: Colors.white70),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Apakah Anda yakin ingin ${newStatus == 'approved' ? 'menyetujui' : 'menolak'} tiket ini?',
+              style: const TextStyle(color: Colors.white70),
+            ),
+            if (newStatus == 'rejected') ...[
+              const SizedBox(height: 16),
+              TextField(
+                controller: reasonController,
+                maxLines: 3,
+                style: const TextStyle(color: Colors.white),
+                decoration: InputDecoration(
+                  hintText: 'Tulis alasan penolakan...',
+                  hintStyle: const TextStyle(color: Colors.white30),
+                  filled: true,
+                  fillColor: Colors.white.withValues(alpha: 0.05),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none,
+                  ),
+                ),
+              ),
+            ],
+          ],
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text('Batal'),
+            child: const Text('Batal', style: TextStyle(color: Colors.white38)),
           ),
           ElevatedButton(
-            onPressed: () => Navigator.pop(ctx, true),
+            onPressed: () {
+              if (newStatus == 'rejected' && reasonController.text.trim().isEmpty) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Alasan harus diisi!')),
+                );
+                return;
+              }
+              Navigator.pop(ctx, true);
+            },
             style: ElevatedButton.styleFrom(
               backgroundColor: newStatus == 'approved'
                   ? Colors.greenAccent
                   : Colors.redAccent,
+              foregroundColor:
+                  newStatus == 'approved' ? Colors.black : Colors.white,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
             ),
             child: Text(newStatus == 'approved' ? 'Ya, Approve' : 'Ya, Reject',
-                style: const TextStyle(color: Colors.black)),
+                style: const TextStyle(fontWeight: FontWeight.bold)),
           ),
         ],
       ),
@@ -56,7 +109,11 @@ class _TicketDetailScreenState extends State<TicketDetailScreen> {
 
     setState(() => _isLoading = true);
     try {
-      await _apiService.updateTicketStatus(widget.ticket.id, newStatus);
+      await _apiService.updateTicketStatus(
+        widget.ticket.id,
+        newStatus,
+        reason: newStatus == 'rejected' ? reasonController.text.trim() : null,
+      );
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -189,6 +246,38 @@ class _TicketDetailScreenState extends State<TicketDetailScreen> {
               label: 'Ticket ID',
               value: ticket.id,
             ),
+
+            // Rejection Reason Detail (Conditional)
+            if (ticket.status == 'rejected' && ticket.rejectionReason.isNotEmpty) ...[
+              const SizedBox(height: 24),
+              const Text(
+                'Alasan Penolakan',
+                style: TextStyle(
+                  color: Colors.redAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                  letterSpacing: 1,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Colors.redAccent.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.redAccent.withValues(alpha: 0.3)),
+                ),
+                child: Text(
+                  ticket.rejectionReason,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 15,
+                    height: 1.5,
+                  ),
+                ),
+              ),
+            ],
 
             // Admin action buttons
             if (canAct) ...[

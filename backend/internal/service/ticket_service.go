@@ -36,9 +36,9 @@ func (s *TicketService) GetTickets(ctx context.Context) ([]models.Ticket, error)
 }
 
 func (s *TicketService) ApproveTicket(ctx context.Context, id string, adminID string) error {
-	return s.repo.UpdateStatus(ctx, id, models.StatusApproved, adminID)
+	return s.repo.UpdateStatus(ctx, id, models.StatusApproved, adminID, "")
 }
 
-func (s *TicketService) RejectTicket(ctx context.Context, id string, adminID string) error {
-	return s.repo.UpdateStatus(ctx, id, models.StatusRejected, adminID)
+func (s *TicketService) RejectTicket(ctx context.Context, id string, adminID string, reason string) error {
+	return s.repo.UpdateStatus(ctx, id, models.StatusRejected, adminID, reason)
 }
